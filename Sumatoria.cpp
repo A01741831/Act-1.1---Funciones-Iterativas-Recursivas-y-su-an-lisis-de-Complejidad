@@ -1,8 +1,13 @@
+// Ana Maria Rodriguez Peña
+// A01741831
+
 #include <iostream>
 using namespace std;
 
 
-//sumaIterativa
+// sumaIterativa
+// O(n) (lineal)
+
 int sumaIterativa(int num){
     int sum=0;
     for(int i=1;i<=num;i++){
@@ -12,7 +17,9 @@ int sumaIterativa(int num){
 }
 
 
-//sumaRecursiva
+// sumaRecursiva
+// O(n) (lineal)
+
 int sumaRecursiva(int num){
     if(num==1){
         return 1;
@@ -21,7 +28,8 @@ int sumaRecursiva(int num){
     }
 }
 
-//sumaDirecta
+// sumaDirecta
+// O(1) (constante)
 int sumaDirecta(int num){
     return num*(num+1)/2;
 }
